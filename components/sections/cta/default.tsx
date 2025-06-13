@@ -25,7 +25,7 @@ export default function CTA({
   title = "Start building",
   buttons = [
     {
-      href: siteConfig.getStartedUrl,
+      href: siteConfig.url,
       text: "Get Started",
       variant: "default",
     },

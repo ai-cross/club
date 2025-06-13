@@ -12,7 +12,7 @@ import {
   NavbarRight,
 } from "../../ui/navbar";
 import Navigation from "../../ui/navigation";
-import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetDescription } from "../../ui/sheet";
+import { Sheet, SheetContent, SheetDescription,SheetHeader, SheetTitle, SheetTrigger } from "../../ui/sheet";
 
 interface NavbarLink {
   text: string;

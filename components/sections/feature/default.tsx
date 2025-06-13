@@ -1,9 +1,8 @@
 import { CheckIcon } from "@radix-ui/react-icons";
-import Image from "next/image";
 
-import { Section } from "@/components/ui/section";
 import { Mockup, MockupFrame } from "@/components/ui/mockup";
 import Screenshot from "@/components/ui/screenshot";
+import { Section } from "@/components/ui/section";
 
 const features = [
   {

@@ -44,14 +44,14 @@ export default function Pricing({
       cta: {
         variant: "default",
         label: "Get all-access",
-        href: siteConfig.pricing.pro,
+        href: siteConfig.url,
       },
       features: [
-        `${siteConfig.stats.websiteTemplates} website templates`,
-        `${siteConfig.stats.appTemplates} app templates`,
-        `${siteConfig.stats.sections} blocks and sections`,
-        `${siteConfig.stats.illustrations} illustrations`,
-        `${siteConfig.stats.animations} custom animations`,
+        `${siteConfig.url} website templates`,
+        `${siteConfig.url} app templates`,
+        `${siteConfig.url} blocks and sections`,
+        `${siteConfig.url} illustrations`,
+        `${siteConfig.url} custom animations`,
       ],
       variant: "glow-brand",
     },
@@ -64,7 +64,7 @@ export default function Pricing({
       cta: {
         variant: "default",
         label: "Get all-access for your team",
-        href: siteConfig.pricing.team,
+        href: siteConfig.url,
       },
       features: [
         "All the templates, components and sections available for your entire team",

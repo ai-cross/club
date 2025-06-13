@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { Section } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
+import { Section } from "@/components/ui/section";
 
 const coFounders = [
   {

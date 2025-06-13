@@ -1,5 +1,5 @@
+import { MailIcon,MapPinIcon, PhoneIcon } from "lucide-react";
 import { ReactNode } from "react";
-import { MapPinIcon, PhoneIcon, MailIcon } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
