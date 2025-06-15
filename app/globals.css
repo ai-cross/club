@@ -106,6 +106,24 @@
       transform: scale(1);
     }
   }
+  @keyframes thread {
+    from {
+      transform: translateX(-50%) rotate(var(--r));
+    }
+    to {
+      transform: translateX(50%) rotate(var(--r));
+    }
+  }
+  @keyframes hyperspeed {
+    0% {
+      transform: translateZ(0) translateX(var(--x)) translateY(var(--y));
+      opacity: 1;
+    }
+    100% {
+      transform: translateZ(500px) translateX(var(--x)) translateY(var(--y));
+      opacity: 0;
+    }
+  }
 }
 
 :root {
