@@ -1,5 +1,5 @@
+import { Color,Mesh, Program, Renderer, Triangle } from "ogl";
 import React, { useEffect, useRef } from "react";
-import { Renderer, Program, Mesh, Triangle, Color } from "ogl";
 
 interface ThreadsProps {
   color?: [number, number, number];
@@ -178,7 +178,7 @@ const Threads: React.FC<ThreadsProps> = ({
     window.addEventListener("resize", resize);
     resize();
 
-    let currentMouse = [0.5, 0.5];
+    const currentMouse = [0.5, 0.5];
     let targetMouse = [0.5, 0.5];
 
     function handleMouseMove(e: MouseEvent) {

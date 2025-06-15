@@ -1,5 +1,5 @@
+import { Color, Mesh, Program, Renderer, Triangle } from "ogl";
 import { useEffect, useRef } from "react";
-import { Renderer, Program, Mesh, Color, Triangle } from "ogl";
 
 const VERT = `#version 300 es
 in vec2 position;
@@ -141,6 +141,7 @@ export default function Aurora(props: AuroraProps) {
     gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
     gl.canvas.style.backgroundColor = "transparent";
 
+    // eslint-disable-next-line @typescript-eslint/prefer-const
     let program: Program | undefined;
 
     function resize() {
@@ -156,7 +157,7 @@ export default function Aurora(props: AuroraProps) {
 
     const geometry = new Triangle(gl);
     if (geometry.attributes.uv) {
-      delete (geometry.attributes as any).uv;
+      delete geometry.attributes.uv;
     }
 
     const colorStopsArray = colorStops.map((hex) => {
@@ -207,7 +208,7 @@ export default function Aurora(props: AuroraProps) {
       }
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
-  }, [amplitude]);
+  }, [amplitude, blend, colorStops]);
 
   return <div ref={ctnDom} style={{
     width: '100%', height: '100%'
