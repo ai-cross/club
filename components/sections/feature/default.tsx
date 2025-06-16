@@ -53,8 +53,8 @@ export default function Feature() {
               className="bg-background/90 w-full rounded-full border-0 overflow-hidden"
             >
               <Screenshot
-                srcLight="https://www.aicross.club/wp-content/uploads/2025/04/%E9%A6%96%E9%A1%B51.jpg"
-                srcDark="https://www.aicross.club/wp-content/uploads/2025/04/%E9%A6%96%E9%A1%B51.jpg"
+                srcLight="/feature-01.jpg"
+                srcDark="/feature-01.jpg"
                 alt="ai cross club"
                 width={800}
                 height={800}

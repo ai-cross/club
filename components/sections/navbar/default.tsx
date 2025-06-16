@@ -12,7 +12,7 @@ import {
   NavbarRight,
 } from "../../ui/navbar";
 import Navigation from "../../ui/navigation";
-import { Sheet, SheetContent, SheetDescription,SheetHeader, SheetTitle, SheetTrigger } from "../../ui/sheet";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../../ui/sheet";
 
 interface NavbarLink {
   text: string;
@@ -44,9 +44,10 @@ export default function Navbar({
   name = "AI 雅宝路跨境出海俱乐部",
   homeUrl = siteConfig.url,
   mobileLinks = [
-    { text: "Getting Started", href: siteConfig.url },
-    { text: "Components", href: siteConfig.url },
-    { text: "Documentation", href: siteConfig.url },
+    // { text: "Getting Started", href: siteConfig.url },
+    // { text: "Components", href: siteConfig.url },
+    // { text: "Documentation", href: siteConfig.url },
+    { text: "核心团队", href: "/teams" },
   ],
   actions = [
     //   { text: "Sign in", href: siteConfig.url, isButton: false },

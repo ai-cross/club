@@ -31,8 +31,8 @@ export default function Hero({
   description = "我们致力于为中小跨境卖家打造全方位赋能生态。通过整合全球供应链资源，打通从选品到物流的关键环节；联动政府与行业龙头，搭建政策解读、税务合规及市场准入的绿色通道；更以AI技术为核心，提供Shopify独立站搭建、智能选品分析、广告投放优化及多语言客服系统集成，助您降本增效。在这里，技术与资源双轮驱动，让跨境出海从单打独斗的“慢车道”迈入协同创新的“高速路”，成就全球生意新可能！",
   mockup = (
     <Screenshot
-      srcLight="https://www.aicross.club/wp-content/uploads/2025/04/home-header01.jpg"
-      srcDark="https://www.aicross.club/wp-content/uploads/2025/04/home-header01.jpg"
+      srcLight="/hero-01.jpg"
+      srcDark="/hero-01.jpg"
       alt="ai cross club"
       width={1248}
       height={702}

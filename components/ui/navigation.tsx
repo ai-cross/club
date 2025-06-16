@@ -53,27 +53,22 @@ export default function Navigation({
       isLink: true,
       href: siteConfig.url,
     },
+    // {
+    //   title: "活动内容",
+    //   content: "components",
+    //   isLink: true,
+    //   href: siteConfig.url,
+    // },
     {
-      title: "活动内容",
-      content: "components",
+      title: "核心团队",
       isLink: true,
-      href: siteConfig.url,
+      href: "/teams",
     },
-    {
-      title: "关于我们",
-      isLink: true,
-      href: siteConfig.url,
-    },
-    {
-      title: "联系我们",
-      isLink: true,
-      href: siteConfig.url,
-    },
-    {
-      title: "项目库",
-      isLink: true,
-      href: siteConfig.url,
-    },
+    // {
+    //   title: "联系我们",
+    //   isLink: true,
+    //   href: siteConfig.url,
+    // },
   ],
   components = [
     // {
