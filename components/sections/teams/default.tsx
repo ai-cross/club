@@ -76,10 +76,10 @@ const MemberCard = ({
 export default function Teams() {
   return (
     <Section>
-      <div className="max-w-container mx-auto flex flex-col items-center gap-16">
+      <div className="max-w-container mx-auto flex flex-col items-center gap-12 sm:gap-16">
         <div>
           <SectionTitle>联合创始人</SectionTitle>
-          <div className="grid md:grid-cols-3 gap-40 mt-12">
+          <div className="grid grid-cols-1 gap-x-50 gap-y-12 md:grid-cols-3 mt-12">
             {coFounders.map((member) => (
               <MemberCard key={member.name} {...member} />
             ))}
@@ -87,7 +87,7 @@ export default function Teams() {
         </div>
         <div>
           <SectionTitle>精英成员</SectionTitle>
-          <div className="grid md:grid-cols-3 gap-40 mt-12">
+          <div className="grid grid-cols-1 gap-x-50 gap-y-12 md:grid-cols-3 mt-12">
             {eliteMembers.map((member) => (
               <MemberCard key={member.name} {...member} />
             ))}
