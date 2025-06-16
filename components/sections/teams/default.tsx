@@ -7,17 +7,17 @@ const coFounders = [
   {
     name: "滨鹏 Even",
     role: "",
-    imageUrl: "https://www.aicross.club/wp-content/uploads/2025/06/%E4%B8%89%E5%93%A5-head.png",
+    imageUrl: "/team_01.jpg",
   },
   {
     name: "张五哥",
     role: "",
-    imageUrl: "https://www.aicross.club/wp-content/uploads/2025/06/%E4%BA%94%E5%93%A5-head.png",
+    imageUrl: "/team_02.jpg",
   },
   {
     name: "悉尼刘哥-Richard",
     role: "",
-    imageUrl: "https://www.aicross.club/wp-content/uploads/2025/06/%E5%88%98%E5%93%A5-head.png",
+    imageUrl: "/team_03.jpg",
   },
 ];
 
@@ -25,17 +25,17 @@ const eliteMembers = [
   {
     name: "晓强",
     role: "公众号流量主",
-    imageUrl: "https://www.aicross.club/wp-content/uploads/2025/05/%E6%99%93%E5%BC%BA300.jpg",
+    imageUrl: "/team_04.jpg",
   },
   {
     name: "小袁",
     role: "AI写作",
-    imageUrl: "https://www.aicross.club/wp-content/uploads/2025/05/%E5%B0%8F%E8%A2%812.png",
+    imageUrl: "/team_05.jpg",
   },
   {
     name: "旭晨",
     role: "平面设计师",
-    imageUrl: "https://www.aicross.club/wp-content/uploads/2025/05/%E6%97%AD%E6%99%A8.jpg",
+    imageUrl: "/team_06.jpg",
   },
 ];
 
