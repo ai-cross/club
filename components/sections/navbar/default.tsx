@@ -1,10 +1,11 @@
 import { Menu } from "lucide-react";
+// import Image from "next/image";
 import { ReactNode } from "react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
+import LaunchUI from "@/components/logos/launch-ui";
 
-import LaunchUI from "../../logos/launch-ui";
 import { Button, type ButtonProps } from "../../ui/button";
 import {
   Navbar as NavbarComponent,
@@ -13,6 +14,7 @@ import {
 } from "../../ui/navbar";
 import Navigation from "../../ui/navigation";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../../ui/sheet";
+import AICrossClubLogo from "@/components/logos/aicrossclub-logo";
 
 interface NavbarLink {
   text: string;
@@ -40,6 +42,7 @@ interface NavbarProps {
 }
 
 export default function Navbar({
+  // logo = <Image src='/logo.png' width={40} height={40} alt="logo" />,
   logo = <LaunchUI />,
   name = "AI 雅宝路跨境出海俱乐部",
   homeUrl = siteConfig.url,
