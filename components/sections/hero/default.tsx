@@ -4,6 +4,11 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
 import { Button, type ButtonProps } from "../../ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "../../ui/carousel";
 import Glow from "../../ui/glow";
 import { Mockup, MockupFrame } from "../../ui/mockup";
 import Screenshot from "../../ui/screenshot";
@@ -28,17 +33,8 @@ interface HeroProps {
 
 export default function Hero({
   title = "跨境加速度, AI 新赋能",
-  description = "我们致力于为中小跨境卖家打造全方位赋能生态。通过整合全球供应链资源，打通从选品到物流的关键环节；联动政府与行业龙头，搭建政策解读、税务合规及市场准入的绿色通道；更以AI技术为核心，提供Shopify独立站搭建、智能选品分析、广告投放优化及多语言客服系统集成，助您降本增效。在这里，技术与资源双轮驱动，让跨境出海从单打独斗的“慢车道”迈入协同创新的“高速路”，成就全球生意新可能！",
-  mockup = (
-    <Screenshot
-      srcLight="/hero-01.jpg"
-      srcDark="/hero-01.jpg"
-      alt="ai cross club"
-      width={1248}
-      height={702}
-      className="w-full"
-    />
-  ),
+  description = "我们致力于为中小跨境卖家打造全方位赋能生态。通过整合全球供应链资源，打通从选品到物流的关键环节；联动政府与行业龙头，搭建政策解读、税务合规及市场准入的绿色通道；更以AI技术为核心，提供Shopify独立站搭建、智能选品分析、广告投放优化及多语言客服系统集成，助您降本增效。在这里，技术与资源双轮驱动，让跨境出海从单打独斗的'慢车道'迈入协同创新的'高速路'，成就全球生意新可能！",
+  mockup,
   // badge = (
   //   <Badge variant="outline" className="animate-appear">
   //     <span className="text-muted-foreground">
@@ -101,17 +97,35 @@ export default function Hero({
           )}
           {mockup !== false && (
             <div className="relative w-full pt-12">
-              <MockupFrame
+              <Carousel
                 className="animate-appear opacity-0 delay-700"
-                size="small"
+                opts={{
+                  loop: true,
+                }}
               >
-                <Mockup
-                  type="responsive"
-                  className="bg-background/90 w-full rounded-xl border-0"
-                >
-                  {mockup}
-                </Mockup>
-              </MockupFrame>
+                <CarouselContent>
+                  <CarouselItem className="flex items-center justify-center">
+                    <Screenshot
+                      srcLight="/hero-01.jpg"
+                      srcDark="/hero-01.jpg"
+                      alt="ai cross club"
+                      width={1248}
+                      height={702}
+                      className="rounded-lg border"
+                    />
+                  </CarouselItem>
+                  <CarouselItem className="flex items-center justify-center">
+                    <Screenshot
+                      srcLight="/hero-02.jpg"
+                      srcDark="/hero-02.jpg"
+                      alt="ai cross club"
+                      width={1248}
+                      height={702}
+                      className="rounded-lg border"
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+              </Carousel>
               <Glow
                 variant="top"
                 className="animate-appear-zoom opacity-0 delay-1000"
