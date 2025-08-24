@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首钢项目价格表</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', Arial, sans-serif;
+            background: #f4f6f9;
+            color: #2c3e50;
+            margin: 0; padding: 20px;
+        }
+        .container {
+            max-width: 1400px; margin: 0 auto; background: #fff; border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06); overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff; padding: 32px; text-align: center;
+        }
+        .header h1 { margin: 0 0 8px; font-weight: 400; }
+        .header p { margin: 0; opacity: .9; }
+        .search { padding: 20px 24px; background: #f8f9fb; border-bottom: 1px solid #eef2f7; }
+        .search input {
+            width: 100%; max-width: 520px; display: block; margin: 0 auto;
+            padding: 12px 18px; border-radius: 28px; border: 2px solid #e9eef5;
+            outline: none; font-size: 15px;
+        }
+        .content { padding: 24px; }
+        .category-section {
+            margin-bottom: 28px; border: 1px solid #eef2f7; border-radius: 12px;
+        }
+        .category-header {
+            padding: 14px 16px; color: #fff; font-weight: 600;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-top-left-radius: 12px; border-top-right-radius: 12px;
+        }
+        .table-wrapper { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px 10px; border-bottom: 1px solid #eef2f7; text-align: left; }
+        thead th { background: #f8f9fb; font-weight: 600; color: #44566c; white-space: nowrap; }
+        tbody tr:hover { background: #fafcff; }
+        .stats {
+            padding: 24px; text-align: center; background: #f8f9fb; border-top: 1px solid #eef2f7;
+        }
+        .muted { color: #7b8a9a; }
+        @media (max-width: 768px) { th, td { padding: 10px 8px; font-size: 14px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>首钢项目价格表</h1>
+
+        </div>
+        <div class="search">
+            <input id="searchInput" type="text" placeholder="搜索表格内容（支持跨表搜索）" />
+        </div>
+        <div class="content">
+            
+        <div class="category-section">
+            <div class="category-header">📋 备注: 展厅正常使用时间为每天8:30-17:30 。加班1小时起算，当日15:00后申请将加收30%加急费 。（4项）</div>
+            <div class="table-wrapper">
+                <table class="service-table">
+                    <thead><tr><th>类别</th><th>区域/规格</th><th>价格 (17:30-24:00)</th><th>价格 (0:00-8:00)</th></tr></thead>
+                    <tbody>
+                        <tr><td>展馆加班</td><td>1A、1B、1B2、2-7号馆</td><td>10,000元/厅/小时</td><td>12,000元/厅/小时</td></tr>
+<tr><td></td><td>11、12、13、14号馆</td><td>5,000元/厅(篷)/小时</td><td>8,000元/厅(篷)/小时</td></tr>
+<tr><td>展台加班</td><td>500平米以下展台(含)</td><td>1,500元/展台/小时</td><td>3,000元/展台/小时</td></tr>
+<tr><td></td><td>501平米以上展台</td><td>3,000元/展台/小时</td><td>5,000元/展台/小时</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="category-section">
+            <div class="category-header">📋 清扫及清运（1项）</div>
+            <div class="table-wrapper">
+                <table class="service-table">
+                    <thead><tr><th>展区毛面积</th><th>1.5元/天/平方米</th><th>公共区域部分清洁免费</th></tr></thead>
+                    <tbody>
+                        <tr><td>食品垃圾</td><td>-</td><td>按照2000元/辆收取(5方的车)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="category-section">
+            <div class="category-header">📋 其他</div>
+            <div class="table-wrapper">
+                <table class="service-table">
+                    <thead><tr><th>项目</th><th>价格</th><th>备注</th></tr></thead>
+                    <tbody>
+                        <tr><td>空调</td><td>2.5元/天/平米</td><td>每天正常供应8小时，超过8小时按0.5元/小时/平米收取 。</td></tr>
+<tr><td>悬挂点安装费 (吊点)</td><td>2500元/点/展期</td><td>每个点承重不超过200kg 。</td></tr>
+<tr><td>进撤馆临时交通勤务</td><td>2000元/馆</td><td>适用于1A、1B、1B2、2-7、11-14号馆 。</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+
+        <div class="category-section">
+            <div class="category-header">📋 二、服务费（合并）</div>
+            <div class="table-wrapper">
+                <table class="service-table">
+                    <thead><tr><th>项目</th><th>价格</th><th>备注</th></tr></thead>
+                    <tbody>
+                        <tr><td>标准展位施工服务费</td><td>20元/平方米</td><td>按展台净面积计算 。</td></tr>
+                        <tr><td>特装施工服务费</td><td>20元/平方米</td><td>按展台净面积计算 。</td></tr>
+                        <tr><td>公共区域铺设阻燃地毯</td><td>15元/平米</td><td>按铺设的净面积计算 。</td></tr>
+                        <tr><td>户外门头服务费</td><td>2,000元/处</td><td>-</td></tr>
+<tr><td>1号馆裸眼3D广告 (LED屏幕)</td><td>25,000元/5小时 (半天) <br>50,000元/10小时 (全天)</td><td>超过10小时按每5小时2.5万元 。</td></tr>
+<tr><td>铁色记忆 201A 大屏</td><td>25,000元/会期 <br>12,500元/天</td><td>-</td></tr>
+<tr><td>施工证件</td><td>30元/张/展期</td><td>-</td></tr>
+<tr><td>货车车证</td><td>50元/张/次</td><td>仅限运输车辆，停放时限两小时内 。</td></tr>
+<tr><td>主办、VIP车证</td><td>40元/张/天 <br>120元/张/展期</td><td>车证由主办方自行设计 。</td></tr>
+<tr><td>展台用水</td><td>1,000元/展期</td><td>-</td></tr>
+<tr><td>茶水服务</td><td>10元/杯</td><td>-</td></tr>
+<tr><td>商务礼仪服务</td><td>800元/人/天</td><td>-</td></tr>
+<tr><td>无线即席发言麦克风</td><td>200元/个</td><td>-</td></tr>
+<tr><td>安检设备</td><td>16,000元/套 (1-3天) <br>18,000元/套 (4-7天)</td><td>每套含1台X光机、2台安检门、2个摄像头 。</td></tr>
+<tr><td>施工押金</td><td>100,000元/厅/展期 (1A-7号馆) 
+<br>50,000元/厅/展期 (11-14号馆) 
+<br>20,000元/间/展期 (会议室)</td><td>-</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="category-section">
+            <div class="category-header">📋 备注: 按7天展期计 。现场报电加收30%加急费 。24小时用电不能作为不间断电源使用 。（5项）</div>
+            <div class="table-wrapper">
+                <table class="service-table">
+                    <thead><tr><th>规格</th><th>照明用电</th><th>临时电</th><th>24小时用电</th></tr></thead>
+                    <tbody>
+                        <tr><td>15A/220V</td><td>1,100元/展期</td><td>300/条/展期</td><td>1,600元/展期</td></tr>
+<tr><td>15A/380V</td><td>1,950元/展期</td><td>500/条/展期</td><td>3,000元/展期</td></tr>
+<tr><td>30A/380V</td><td>3,400元/展期</td><td>800/条/展期</td><td>6,000元/展期</td></tr>
+<tr><td>60A/380V</td><td>5,450元/展期</td><td>1,000/条/展期</td><td>9,400元/展期</td></tr>
+<tr><td>100A/380V</td><td>7,800元/展期</td><td>1,500/条/展期</td><td>14,000元/展期</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="category-section">
+            <div class="category-header">📋 电话租用（3项）</div>
+            <div class="table-wrapper">
+                <table class="service-table">
+                    <thead><tr><th>项目</th><th>价格</th><th>通话押金</th><th>话机押金</th></tr></thead>
+                    <tbody>
+                        <tr><td>市内电话</td><td>800元/条/会期</td><td>不需要</td><td>500元</td></tr>
+<tr><td>国内直拨</td><td>900元/条/会期</td><td>1,000元</td><td>500元</td></tr>
+<tr><td>国际直拨</td><td>1,000元/条/会期</td><td>3,000元</td><td>500元</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="category-section">
+            <div class="category-header">📋 备注: 标准服务为8小时/天，行驶距离不超过100KM 。（4项）</div>
+            <div class="table-wrapper">
+                <table class="service-table">
+                    <thead><tr><th>规格</th><th>售价(天)</th><th>超时、超距费用</th></tr></thead>
+                    <tbody>
+                        <tr><td>宇通客车(50座)</td><td>3,500元</td><td>50元/公里</td></tr>
+<tr><td>丰田考斯特(20座)</td><td>3,500元</td><td>50元/公里</td></tr>
+<tr><td>别克GL8(7座)</td><td>2,500元</td><td>30元/公里</td></tr>
+<tr><td>电动观光车(14座)</td><td>4,000元</td><td>150元/小时</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="category-section">
+            <div class="category-header">📋 六、会议室规格及报价（41项）</div>
+            <div class="table-wrapper">
+                <table class="service-table">
+                    <thead><tr><th>序号</th><th>位置</th><th>会议室</th><th>楼层</th><th>面积m²</th><th>长X宽X高(m)</th><th>建议可容纳人数 (剧院式)</th><th>建议可容纳人数 (课桌式)</th><th>单价 (4小时)</th><th>全天价格 (8:30-17:30)</th><th>夜间搭建 (19:00-次日07:00)</th></tr></thead>
+                    <tbody>
+                        <tr><td>1</td><td>刀具车间</td><td>刀具车间1</td><td>1</td><td>262.5</td><td>17.5×15×9</td><td>130</td><td>60</td><td>15,000元</td><td>30,000元</td><td>15,000元</td></tr>
+<tr><td></td><td>刀具车间</td><td>刀具车间2</td><td>1</td><td>442.5</td><td>29.5×15×9</td><td>300</td><td>140</td><td>25,000元</td><td>50,000元</td><td>25,000元</td></tr>
+<tr><td>2</td><td>料仓</td><td>贵宾室</td><td>1</td><td>46</td><td>5.6*7.5</td><td>U型沙发6人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>料仓</td><td>料仓贵宾室</td><td>1</td><td>244</td><td>29.88.26</td><td>U型沙发24人</td><td>-</td><td>7,600元</td><td>15,200元</td><td>7,600元</td></tr>
+<tr><td>3</td><td>修理车间</td><td>修理车间1</td><td>1</td><td>426.3</td><td>29.4×14.5×7.5</td><td>308</td><td>140</td><td>25,000元</td><td>50,000元</td><td>25,000元</td></tr>
+<tr><td></td><td>修理车间</td><td>贵宾室1</td><td>1</td><td>67</td><td>7.5×8.4</td><td>U型沙发9人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td>4</td><td>修理车间</td><td>修理车间2</td><td>1</td><td>494.4</td><td>26.3×18.8×7.5</td><td>440</td><td>150</td><td>30,000元</td><td>60,000元</td><td>30,000元</td></tr>
+<tr><td></td><td>修理车间</td><td>贵宾室2</td><td>1</td><td>68</td><td>7.3*8.4</td><td>U型沙发10人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td>5</td><td>修理车间</td><td>修理车间3</td><td>1</td><td>828</td><td>40.4×20.5×9</td><td>550</td><td>315</td><td>40,000元</td><td>80,000元</td><td>40,000元</td></tr>
+<tr><td></td><td>修理车间</td><td>贵宾室3</td><td>1</td><td>66</td><td>8×7.7</td><td>U型沙发9人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td>6</td><td>空压机室</td><td>会议室</td><td>1</td><td>160</td><td>17.8×9×7</td><td>106</td><td>64</td><td>7,000元</td><td>14,000元</td><td>7,000元</td></tr>
+<tr><td></td><td>空压机室</td><td>贵宾室</td><td>1</td><td>18</td><td>3.2×5.6</td><td>U型沙发9人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>空压机室</td><td>会议室</td><td>1</td><td>180</td><td>12×15×11.6</td><td>90</td><td>126</td><td>7,000元</td><td>14,000元</td><td>7,000元</td></tr>
+<tr><td>7</td><td>焦侧除尘</td><td>贵宾室</td><td>2</td><td>24</td><td>5.5×4.3</td><td>U型沙发9人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>焦侧除尘</td><td>会议室1</td><td>1</td><td>480</td><td>16.2×29.6×12.1</td><td>320</td><td>192</td><td>30,000元</td><td>60,000元</td><td>30,000元</td></tr>
+<tr><td></td><td>缓冲间</td><td>贵宾室1</td><td>1</td><td>47</td><td>6.2×7.2</td><td>U型沙发10人</td><td>-</td><td>4,800元</td><td>9,600元</td><td>4,800元</td></tr>
+<tr><td></td><td>缓冲间</td><td>会议室2</td><td>1</td><td>237</td><td>16.2×14.6×7.5</td><td>94</td><td>158</td><td>15,000元</td><td>30,000元</td><td>15,000元</td></tr>
+<tr><td>8</td><td>1号展馆2层</td><td>贵宾室2</td><td>1</td><td>22</td><td>3.7×5.9</td><td>U型沙发6人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>1号展馆2层</td><td>201A 铁色记忆</td><td>2</td><td>750</td><td>35.7×21</td><td>500</td><td>300</td><td>45,000元</td><td>90,000元</td><td>45,000元</td></tr>
+<tr><td></td><td>1号展馆2层</td><td>201B 铁色记忆</td><td>2</td><td>750</td><td>35.7×21</td><td>500</td><td>300</td><td>45,000元</td><td>90,000元</td><td>45,000元</td></tr>
+<tr><td></td><td>1号展馆2层</td><td>201C 铁色记忆</td><td>2</td><td>750</td><td>35.7×21</td><td>500</td><td>300</td><td>45,000元</td><td>90,000元</td><td>45,000元</td></tr>
+<tr><td>9</td><td>1号展馆2层</td><td>202 月季飘香</td><td>2</td><td>70.5</td><td>/</td><td>50</td><td>30</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>1号展馆2层</td><td>203 石景风华</td><td>2</td><td>213</td><td>/</td><td>55</td><td>120</td><td>8,000元</td><td>16,000元</td><td>8,000元</td></tr>
+<tr><td></td><td>1号展馆2层</td><td>204 秀池风韵</td><td>2</td><td>264</td><td>/</td><td>60</td><td>140</td><td>12,000元</td><td>24,000元</td><td>12,000元</td></tr>
+<tr><td></td><td>1号展馆2层</td><td>205 功碑春晓</td><td>2</td><td>145</td><td>/</td><td>50</td><td>70</td><td>6,000元</td><td>12,000元</td><td>6,000元</td></tr>
+<tr><td>10</td><td>1号展馆2层</td><td>206 龙烟雨境</td><td>2</td><td>99</td><td>/</td><td>55</td><td>40</td><td>4,800元</td><td>9,600元</td><td>4,800元</td></tr>
+<tr><td></td><td>1号展馆2层</td><td>207</td><td>2</td><td>120</td><td>/</td><td>60</td><td>40</td><td>6,000元</td><td>3,000元</td><td>3,000元</td></tr>
+<tr><td>11</td><td>1号展馆2层B2展厅</td><td>B2-1</td><td>2</td><td>1750</td><td>/</td><td>1100</td><td>850</td><td>70,000元</td><td>140,000元</td><td>70,000元</td></tr>
+<tr><td></td><td>1号展馆2层B2展厅</td><td>B2-2</td><td>2</td><td>1800</td><td>/</td><td>1100</td><td>850</td><td>70,000元</td><td>140,000元</td><td>70,000元</td></tr>
+<tr><td></td><td>1号展馆2层B2展厅</td><td>B2-3</td><td>2</td><td>1500</td><td>/</td><td>1100</td><td>850</td><td>70,000元</td><td>140,000元</td><td>70,000元</td></tr>
+<tr><td>12</td><td>1号展馆3层贵宾室</td><td>301</td><td>3</td><td>72</td><td>/</td><td>U型沙发9人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>1号展馆3层贵宾室</td><td>302</td><td>3</td><td>42</td><td>/</td><td>U型沙发6人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>1号展馆3层贵宾室</td><td>303</td><td>3</td><td>83</td><td>/</td><td>U型沙发10人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>1号展馆3层贵宾室</td><td>304</td><td>3</td><td>74</td><td>/</td><td>U型沙发9人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>1号展馆3层贵宾室</td><td>305</td><td>3</td><td>56</td><td>/</td><td>U型沙发7人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>1号展馆3层贵宾室</td><td>306</td><td>3</td><td>50</td><td>/</td><td>U型沙发7人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>1号展馆3层贵宾室</td><td>307</td><td>3</td><td>52</td><td>/</td><td>U型沙发7人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td></td><td>1号展馆3层贵賓室</td><td>308</td><td>3</td><td>32</td><td>/</td><td>U型沙发6人</td><td>-</td><td>3,800元</td><td>7,600元</td><td>3,800元</td></tr>
+<tr><td>13</td><td>1号展馆2层会议室做展</td><td>201A 铁色记忆</td><td>2</td><td>750</td><td>35.7×21</td><td>-</td><td>-</td><td>30元/平米/天 (不包含地毯保护)</td><td>-</td><td>-</td></tr>
+<tr><td></td><td>1号展馆2层会议室做展</td><td>201B 铁色记忆</td><td>2</td><td>750</td><td>35.7×21</td><td>-</td><td>-</td><td>30元/平米/天 (不包含地毯保护)</td><td>-</td><td>-</td></tr>
+<tr><td></td><td>1号展馆2层会议室做展</td><td>201C 铁色记忆</td><td>2</td><td>750</td><td>35.7×21</td><td>-</td><td>-</td><td>30元/平米/天 (不包含地毯保护)</td><td>-</td><td>-</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="category-section">
+            <div class="category-header">📋 备注: 三天为一个会期 。（4项）</div>
+            <div class="table-wrapper">
+                <table class="service-table">
+                    <thead><tr><th>功率</th><th>价格/会期</th></tr></thead>
+                    <tbody>
+                        <tr><td>1KW</td><td>300元</td></tr>
+<tr><td>5KW</td><td>1000元</td></tr>
+<tr><td>10KW</td><td>1800元</td></tr>
+<tr><td>50KW(100A/380V)</td><td>6500元</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="category-section">
+            <div class="category-header">📋 八、餐饮服务（5项）</div>
+            <div class="table-wrapper">
+                <table class="service-table">
+                    <thead><tr><th>餐饮形式</th><th>起订标准</th><th>餐饮标准</th></tr></thead>
+                    <tbody>
+                        <tr><td>盒饭 (中式)</td><td>50人</td><td>50元/位起</td></tr>
+<tr><td>盒饭 (西式)</td><td>30人</td><td>158元/份起</td></tr>
+<tr><td>茶歇</td><td>50人</td><td>50元/位起</td></tr>
+<tr><td>自助</td><td>50人</td><td>200元/位起</td></tr>
+<tr><td>桌餐</td><td>100人</td><td>300元/位起</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        </div>
+        <div class="stats"></div>
+         <div style="text-align:center;color:#2c3e50;margin-top:16px;">
+            🌟 首钢项目最新报价表 | 📞 联系我们获取定制方案
+         </div>
+      </div>
+      <script>
+        const input = document.getElementById('searchInput');
+        input.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            document.querySelectorAll('tbody tr').forEach(tr => {
+                const visible = tr.textContent.toLowerCase().includes(term);
+                tr.style.display = visible ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

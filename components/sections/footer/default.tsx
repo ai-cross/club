@@ -1,4 +1,4 @@
-import { MailIcon,MapPinIcon, PhoneIcon } from "lucide-react";
+import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import { ReactNode } from "react";
 
 import { siteConfig } from "@/config/site";
@@ -17,6 +17,7 @@ interface FooterLink {
   icon?: ReactNode;
   text: string;
   href: string;
+  isSubscription?: boolean;
 }
 
 interface FooterColumnProps {
@@ -39,6 +40,13 @@ export default function FooterSection({
   name = siteConfig.name,
   columns = [
     {
+      title: "导航",
+      links: [
+        { text: "服务内容", href: siteConfig.url },
+        { text: "核心团队", href: "/teams" },
+      ],
+    },
+    {
       title: "服务对接",
       links: [
         { text: "全球独立站网站搭建", href: siteConfig.url },
@@ -53,18 +61,14 @@ export default function FooterSection({
       links: [
         { icon: <MapPinIcon size={18} className="inline-block" />, text: "北京市朝阳区日坛国际贸易中心B座 3D37", href: siteConfig.url },
         { icon: <PhoneIcon size={18} className="inline-block" />, text: "13911481913", href: siteConfig.url },
-        { icon: <MailIcon size={18} className="inline-block" />, text: "aicrossclub@gmail.com", href: siteConfig.url },
+        {
+          icon: <MailIcon size={18} className="inline-block" />,
+          text: "订阅我们的更新",
+          href: siteConfig.url,
+          isSubscription: true
+        },
       ],
     },
-    // {
-    //   title: "Contact",
-    //   links: [
-    //     { text: "Meta", href: siteConfig.url },
-    //     { text: "Instagram", href: siteConfig.url },
-    //     { text: "X", href: siteConfig.url },
-    //     { text: "LinkedIn", href: siteConfig.url },
-    //   ],
-    // },
   ],
   copyright = "© 2025 AI 雅宝路跨境出海俱乐部. All rights reserved",
   policies = [
@@ -89,14 +93,37 @@ export default function FooterSection({
               <FooterColumn key={index} className="col-span-1">
                 <h3 className="text-md pt-1 font-semibold">{column.title}</h3>
                 {column.links.map((link, linkIndex) => (
-                  <a
-                    key={linkIndex}
-                    href={link.href}
-                    className="text-muted-foreground text-sm"
-                  >
-                    {link.icon && <span className="mr-2">{link.icon}</span>}
-                    {link.text}
-                  </a>
+                  link.isSubscription ? (
+                    <div key={linkIndex} className="space-y-2">
+                      <div className="flex items-center text-muted-foreground text-sm">
+                        {link.icon && <span className="mr-2">{link.icon}</span>}
+                        {link.text}
+                      </div>
+                      <form className="flex gap-2">
+                        <input
+                          type="email"
+                          placeholder="输入邮箱地址"
+                          className="flex-1 px-3 py-2 text-sm border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
+                          required
+                        />
+                        <button
+                          type="submit"
+                          className="px-4 py-2 text-sm font-medium text-primary-foreground bg-primary hover:bg-primary/90 rounded-md transition-colors duration-200"
+                        >
+                          订阅
+                        </button>
+                      </form>
+                    </div>
+                  ) : (
+                    <a
+                      key={linkIndex}
+                      href={link.href}
+                      className="text-muted-foreground text-sm"
+                    >
+                      {link.icon && <span className="mr-2">{link.icon}</span>}
+                      {link.text}
+                    </a>
+                  )
                 ))}
               </FooterColumn>
             ))}
