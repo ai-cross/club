@@ -64,6 +64,47 @@ export const eliteMembers = [
       "主导建立高价值关系人才数据库，开发关键枢纽型人才接入",
     ],
   },
+  {
+    name: "帕克",
+    role: "国企 IT 运维经理",
+    imageUrl: "/team_08.jpg",
+    description: [
+      "资深 IT 运维经理",
+      "AI 编程爱好者",
+    ]
+  },
+  {
+    name: "布偶",
+    role: "运营专家",
+    imageUrl: "/team_09.jpg",
+    description: [
+      "数智化运营专家",
+      "供应链管理专家",
+    ]
+  },
+  {
+    name: "赛因豪",
+    role: "大厂算法工程师",
+    imageUrl: "/team_10.jpg",
+    description: [
+      "跨境 AI 提效专家",
+      "AI 工作流，工具专家",
+    ]
+  },
+  {
+    name: "李屹铭",
+    role: "金牌 IP 教练",
+    imageUrl: "/team_11.jpg",
+    description: [
+      "电视台剪辑师",
+      "金融培训公司视频制作主管",
+      "百人团队金牌剪辑讲师",
+      "拍摄剪辑训练营教练",
+      "助力上百位素人打造IP视频",
+      "助力企业进行企业宣传、产品宣传、企业文化等",
+      "网络宣传以及打造团队凝聚力"
+    ]
+  }
 ];
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
